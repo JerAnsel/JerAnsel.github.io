@@ -1,0 +1,42 @@
+@import "template.css";
+/* *{
+    border: 1px solid black;
+} */
+
+.header{
+    grid-area: head;
+    background: url("../images/wisdom.png") no-repeat center;
+    background-size: cover;
+    
+}
+.content{
+    display: grid;
+    grid-auto-columns: minmax(300px, auto);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four";
+}
+.content ul{
+    list-style: none;
+    line-height: 1;
+}
+
+.content ul li{
+    display: flex;
+    margin-bottom: 10px;    
+}
+
+.content li h3{
+    margin: 0px;
+}
+
+.content ul li img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-right: 10px;
+    
+}
