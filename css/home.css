@@ -6,3 +6,42 @@
     background-size: cover;
     
 }
+
+.content{
+    display: grid;
+    grid-auto-columns: minmax(300px, auto);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four";
+}
+.content ul{
+    list-style: none;
+    line-height: 1;
+}
+
+.content ul li{
+    display: flex;
+    margin-bottom: 10px;    
+}
+
+.content li h3{
+    margin: 0px;
+}
+.content li h2{
+    margin: 0px;
+}
+
+.content ul li img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
