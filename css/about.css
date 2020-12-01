@@ -1,6 +1,6 @@
 @import "template.css";
 
-.header{
+.header {
     grid-area: head;
     background: url("../images/wisdom.png") no-repeat center;
     background-size: cover;
