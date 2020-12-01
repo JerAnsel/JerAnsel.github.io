@@ -54,6 +54,7 @@ a {
     grid-area: content;
     font-size: large;
     padding-top: 50px;
+    padding-left: 50px;
 }
 
 .sideBar{
@@ -77,6 +78,37 @@ a {
 
 .sideBar li h3{
     margin-bottom: 0px;
+}
+
+.aboutCard{
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 4px 4px 4px 4px;
+}
+
+.aboutCard img{
+    width: 14%;
+    height: 14%;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+    border-radius: 10px;
+}
+
+.aboutCard h3{
+    margin: 0px;
+    display: flex;
+}
+
+.aboutCard button{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/linkedin.png);
+    background-size: cover;
+    border-radius: 2px;
+    margin-left: 4px;
 }
 
 .footer{

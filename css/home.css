@@ -10,13 +10,9 @@
 .content{
     display: grid;
     grid-auto-columns: minmax(300px, auto);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "one"
-    "two"
-    "three"
-    "four";
+    grid-template-rows: minmax(200px, auto) 1fr; 
 }
+
 .content ul{
     list-style: none;
     line-height: 1;

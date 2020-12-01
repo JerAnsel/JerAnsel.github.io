@@ -2,7 +2,7 @@
 
 .header{
     grid-area: head;
-    background: url("../images/about-us.jpg") no-repeat center;
+    background: url("../images/wisdom.png") no-repeat center;
     background-size: cover;
     
 }

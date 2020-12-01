@@ -13,12 +13,8 @@
     display: grid;
     grid-auto-columns: minmax(300px, auto);
     grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "one"
-    "two"
-    "three"
-    "four";
 }
+
 .content ul{
     list-style: none;
     line-height: 1;
