@@ -1,43 +1,46 @@
 @import "template.css";
 
-.header {
-    grid-area: head;
-    background: url("../images/blindfolded.jpg") no-repeat center;
-    background-size: cover;
-    
-}
+@media(min-width:990px){
 
-.content {
-    display: grid;
-    grid-auto-columns: minmax(300px, auto);
-    grid-template-rows: minmax(200px, auto) 1fr; 
-}
+    .header {
+        grid-area: head;
+        background: url("../images/blindfolded.jpg") no-repeat center;
+        background-size: cover;
+        
+    }
+/* 
+    .content {
+        display: grid;
+        grid-auto-columns: minmax(300px, auto);
+        grid-template-rows: minmax(200px, auto) 1fr; 
+    } */
 
-.content ul {
-    list-style: none;
-    line-height: 1;
-}
+    .content ul {
+        list-style: none;
+        line-height: 1;
+    }
 
-.content ul li {
-    display: flex;
-    margin-bottom: 10px;    
-}
+    .content ul li {
+        display: flex;
+        margin-bottom: 10px;    
+    }
 
-.content li h3 {
-    margin: 0;
-}
-.content li h2 {
-    margin: 0;
-}
+    .content li h3 {
+        margin: 0;
+    }
+    .content li h2 {
+        margin: 0;
+    }
 
-.content ul li img {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-    border-radius: 10px 0 0 10px;
-    
-}
-.card {
-    border-radius: 10px;
-    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    .content ul li img {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        border-radius: 10px 0 0 10px;
+        
+    }
+    .card {
+        border-radius: 10px;
+        box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
 }
