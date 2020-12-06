@@ -1,36 +1,41 @@
 @import "template.css";
 
-@media(min-width:990px){
+.header {
+    grid-area: head;
+    background: url("../images/blindfolded.jpg") no-repeat center;
+    background-size: cover;
+    
+}
 
-    .header {
-        grid-area: head;
-        background: url("../images/blindfolded.jpg") no-repeat center;
-        background-size: cover;
-        
-    }
+
+.content ul {
+    list-style: none;
+    line-height: 1;
+    padding-inline-start: 0px;
+
+}
+
+.content ul li {
+    display: flex;
+    margin-bottom: 10px;    
+}
+
+.content li h3 {
+    margin: 0;
+}
+.content li h2 {
+    margin: 0;
+}
+
+
+@media(min-width:300px){
+
 /* 
     .content {
         display: grid;
         grid-auto-columns: minmax(300px, auto);
         grid-template-rows: minmax(200px, auto) 1fr; 
     } */
-
-    .content ul {
-        list-style: none;
-        line-height: 1;
-    }
-
-    .content ul li {
-        display: flex;
-        margin-bottom: 10px;    
-    }
-
-    .content li h3 {
-        margin: 0;
-    }
-    .content li h2 {
-        margin: 0;
-    }
 
     .content ul li img {
         width: 70px;
