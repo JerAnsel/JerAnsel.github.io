@@ -4,5 +4,13 @@
     grid-area: head;
     background: url("../images/wisdom.png") no-repeat center;
     background-size: cover;
-    
+
+}
+@media(min-width: 700px) {
+        
+    .header {
+    grid-area: head;
+    background: url("../images/wisdomTest.png") no-repeat center;
+    background-size: cover;    
+    }
 }
