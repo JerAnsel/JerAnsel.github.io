@@ -2,7 +2,16 @@
 
 .header {
     grid-area: head;
-    background: url("../images/realism.jpeg") no-repeat center;
+    background: url("../images/realismSmall.jpg") no-repeat center;
     background-size: cover;
     
+}
+
+@media(min-width:770px) and (max-width:990px){
+    .header {
+        grid-area: head;
+        background: url("../images/realism.jpeg") no-repeat center;
+        background-size: cover;
+        
+    }
 }

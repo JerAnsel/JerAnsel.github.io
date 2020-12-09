@@ -1,37 +1,15 @@
 @import "template.css";
 
-/* All the style rules here are constant across media query breakpoints. */
+/* @media(max-width: 770px) */
 
 a  {
     text-decoration: none;
     color: black;
 }
 
-.sideBar ul::before {
-    content: attr(aria-label);
-    font-size: 1.3em;
-    font-weight: 800;
-    text-decoration: underline;
-}
-
-.sideBar li h3 {
-    margin-bottom: 0;
-}
-
-.aboutCard h3 {
-    margin: 0;
-    display: flex;
-}
-
-.footer {
-    grid-area: footer;
-    align-items: center;
-    background-color: black;
-}
-
 .pageContainer {
     display: grid;
-    grid-template-rows: 450px 50px 2fr 1fr 30px;
+    grid-template-rows: 450px 50px 2fr auto 30px;
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: 
     "head head head head"
@@ -80,28 +58,19 @@ a  {
     font-size: 18px;
     padding-top: 50px;
     padding-left: 50px;
-    padding-right: 10px;
+    padding-right: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.sideBar {
-    padding-top: 100px;
-    grid-area: sidebar;
-}
-
-.sideBar li {
-    list-style: none;
-    line-height: 1.5;
-    padding-right: 15px;
-    margin-top: 0;
-    padding-bottom: 10px;
-}
-
 .aboutCard {
-    width: 70%;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 4px 4px 4px 4px;
+}
+
+.aboutCard h3 {
+    margin: 0;
+    display: flex;
 }
 
 .aboutCard img {
@@ -122,6 +91,41 @@ a  {
     margin-left: 4px;
 }
 
+.sideBar {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    grid-area: sidebar;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sideBar li {
+    list-style: none;
+    line-height: 1.5;
+    padding-right: 15px;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.sideBar li span{
+    font-size: 18px;
+}
+
+.sideBar ul::before {
+    content: attr(aria-label);
+    font-size: 1.3em;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.sideBar li h3 {
+    margin-bottom: 0;
+}
+
+.footer {
+    grid-area: footer;
+    align-items: center;
+    background-color: black;
+}
 
 @media(min-width:770px) and (max-width:990px){
     .pageContainer {
@@ -137,6 +141,13 @@ a  {
 
     .content{
         font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sideBar {
+        padding-top: 100px;
+        grid-area: sidebar;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 
