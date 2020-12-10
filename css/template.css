@@ -131,7 +131,7 @@ a  {
     .pageContainer {
         display: grid;
         grid-template-rows: 450px 50px 1fr 30px;
-        grid-template-columns: repeat(6,1fr);
+        grid-template-columns: repeat(5,1fr) 0.5fr;
         grid-template-areas: 
         "head head head head head head"
         "nav nav nav nav nav nav"
@@ -140,14 +140,20 @@ a  {
     }
 
     .content{
+        grid-area: content;
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 50px 0 0 0;
     }
 
     .sideBar {
-        padding-top: 100px;
+        padding-top: 70px;
         grid-area: sidebar;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sideBar ul {
+        padding-inline-start: 30px;
     }
 }
 
