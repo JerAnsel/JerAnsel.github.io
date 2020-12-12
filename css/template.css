@@ -141,7 +141,7 @@ a  {
 
     .content{
         grid-area: content;
-        font-size: 20px;
+        font-size: 16px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 50px 0 0 0;
     }
@@ -155,5 +155,42 @@ a  {
     .sideBar ul {
         padding-inline-start: 30px;
     }
+
+    .sideBar li span{
+        font-size: 14px;
+    }
 }
 
+@media(min-width:990px){
+    .pageContainer {
+        display: grid;
+        grid-template-rows: 450px 50px 1fr 30px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "head head head head head head"
+        "nav nav nav nav nav nav"
+        "sidebar sidebar content content content ."
+        "footer footer footer footer footer footer";
+    }
+
+    .content{
+        grid-area: content;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 50px 0 0 0;
+    }
+
+    .sideBar {
+        padding-top: 70px;
+        grid-area: sidebar;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sideBar ul {
+        padding-inline-start: 30px;
+    }
+
+    .sideBar li span{
+        font-size: 14px;
+    }
+}
