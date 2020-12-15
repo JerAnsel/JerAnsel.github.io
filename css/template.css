@@ -1,6 +1,7 @@
-@import "template.css";
-
-/* @media(max-width: 770px) */
+@import "footer.css";
+@import "navbar.css";
+@import "content.css";
+@import "sidebar.css";
 
 a  {
     text-decoration: none;
@@ -19,114 +20,6 @@ a  {
     "footer footer footer footer";
 }
 
-.navBar {
-    grid-area: nav;
-    display: flex;
-    padding-right: 30px;
-    justify-content: space-between;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-bottom : black solid 1px;
-    /* margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px; */
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: black;
-}
-
-.navBar a {
-    padding-left: 30px;
-    font-weight: 800;
-    color: white;
-}
-
-.navBar a:hover {
-    padding-left: 30px;
-    font-weight: 800;
-    color: gray;
-}
-
-.subscribe {
-    border: white solid 1px;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px !important;
-}
-
-.content {
-    grid-area: content;
-    font-size: 18px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.aboutCard {
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
-    padding: 4px 4px 4px 4px;
-}
-
-.aboutCard h3 {
-    margin: 0;
-    display: flex;
-}
-
-.aboutCard img {
-    width: 14%;
-    height: 14%;
-    margin-right: 4px;
-    margin-bottom: 4px;
-    float: left;
-    border-radius: 10px;
-}
-
-.aboutCard button {
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/linkedin.png);
-    background-size: cover;
-    border-radius: 2px;
-    margin-left: 4px;
-}
-
-.sideBar {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    grid-area: sidebar;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.sideBar li {
-    list-style: none;
-    line-height: 1.5;
-    padding-right: 15px;
-    margin-top: 0;
-    padding-bottom: 10px;
-}
-
-.sideBar li span{
-    font-size: 18px;
-}
-
-.sideBar ul::before {
-    content: attr(aria-label);
-    font-size: 1.3em;
-    font-weight: 800;
-    text-decoration: underline;
-}
-
-.sideBar li h3 {
-    margin-bottom: 0;
-}
-
-.footer {
-    grid-area: footer;
-    align-items: center;
-    background-color: black;
-}
-
 @media(min-width:770px) and (max-width:990px){
     .pageContainer {
         display: grid;
@@ -137,27 +30,6 @@ a  {
         "nav nav nav nav nav nav"
         "sidebar sidebar content content content ."
         "footer footer footer footer footer footer";
-    }
-
-    .content{
-        grid-area: content;
-        font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 50px 0 0 0;
-    }
-
-    .sideBar {
-        padding-top: 70px;
-        grid-area: sidebar;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .sideBar ul {
-        padding-inline-start: 30px;
-    }
-
-    .sideBar li span{
-        font-size: 14px;
     }
 }
 
@@ -171,26 +43,5 @@ a  {
         "nav nav nav nav nav nav"
         "sidebar sidebar content content content ."
         "footer footer footer footer footer footer";
-    }
-
-    .content{
-        grid-area: content;
-        font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 50px 0 0 0;
-    }
-
-    .sideBar {
-        padding-top: 70px;
-        grid-area: sidebar;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .sideBar ul {
-        padding-inline-start: 30px;
-    }
-
-    .sideBar li span{
-        font-size: 14px;
     }
 }
